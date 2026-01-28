@@ -85,7 +85,7 @@ watch(color, (newColor) => {
 function downloadQRCode() {
   const slug = props.data.split('/').pop()
   qrCode.download({
-    extension: 'png',
+    extension: 'svg',
     name: `qr_${slug}`,
   })
 }
